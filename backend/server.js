@@ -19,7 +19,17 @@ connectDB();
 
 const app = express();
 
-app.use(cors({ origin: process.env.CLIENT_URL || "*" }));
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://travelbharat-lilac.vercel.app",
+];
+
+app.use(
+  cors({
+    origin: allowedOrigins,
+    credentials: true,
+  })
+);
 app.use(compression());
 app.use(express.json({ limit: "5mb" }));
 app.use(morgan("dev"));
