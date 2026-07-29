@@ -1,0 +1,12 @@
+{
+  "name": "travelbharat",
+  "version": "1.0.0",
+  "description": "A digital travel encyclopedia of India: state-wise and city-wise tourist destination listings with rich details, search & filters, image galleries, and an admin panel for content management.",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
